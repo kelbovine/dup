@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como o Gartic Obtém Suas Informações</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+            border-top: 1px solid #ddd;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Como o Gartic Obtém Suas Informações</h1>
+    </header>
+
+    <div class="container">
+        <p>O <span class="highlight">Gartic</span> tem um mecanismo salvo no navegador que você usa. Mesmo que tenha várias contas no mesmo dispositivo, e mesmo utilizando VPN, ele vai pegar os dados do dispositivo e mesclar com o último IP real que foi usado.</p>
+
+        <p>Pessoal do Gartic ainda cai nessa de que só usar VPNs é suficiente para não ser descoberto... Estão muito enganados e eu posso provar.</p>
+
+        <h2>Como era em 2019</h2>
+        <p>Em 2019, a identificação era feita basicamente pelo IP. Dava para usar VPNs tranquilamente, já que o Gartic não pegava o <span class="highlight">ID Único</span> do dispositivo.</p>
+        <img src="https://i.postimg.cc/ydHykGMf/kelgd20-254-75-181-144156217175601.jpg" alt="Captura de 2019">
+
+        <h2>A partir de 2021</h2>
+        <p>Agora, de 2021 em diante, isso mudou. O sistema do Gartic passou a coletar o <span class="highlight">ID Único</span> do dispositivo, tornando a identificação muito mais eficaz.</p>
+        <img src="https://i.postimg.cc/QM5qNDy9/24-01-31-09-11-38-522.jpg" alt="Captura de 2021">
+
+        <p>Está aí neste print a relação no sistema deles sobre isso.</p>
+
+        <h2>Como obtive essas informações?</h2>
+        <p>Quem duplicava antes, mesmo em algo simples como salvar vitórias em uma sala, era facilmente pego pelos banimentos da moderação. Quando alguém era banido, eles enviavam o link do print deles, mostrando o motivo do banimento.</p>
+
+        <p>No início de 2024, eu comecei a testar bots nas salas do <span class="highlight">Geral</span> apenas para entender como eles localizam essas informações. Sacrifiquei contas para isso, mas foi a melhor descoberta que um jogador do Gartic fez até hoje.</p>
+
+        <h2>Como mudar meu ID Único?</h2>
+        <p>Para alterar o seu <span class="highlight">ID Único</span>, basta limpar os dados do site Gartic, incluindo os cookies.</p>
+        <p>É muito simples:</p>
+        <ol>
+            <li>Abra o DevTools (Ferramentas de Desenvolvedor) no seu navegador.</li>
+            <li>Vá até a categoria "Aplicação" (ou "Application").</li>
+            <li>Modifique o valor de "aceita" no armazenamento local.</li>
+        </ol>
+        <img src="https://i.postimg.cc/V6WBMR1z/Screenshot-2024-10-04-21-18-46.png" alt="Modificando o ID Único no DevTools">
+    </div>
+
+    <footer>
+        &copy; 2024 - Descobertas sobre o sistema do Gartic
+    </footer>
+
+</body>
+</html>
